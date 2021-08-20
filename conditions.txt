@@ -1,0 +1,37 @@
+General conditions:
+- All Products have a sellIn value which denotes the number of days we have to sell the product
+- All Products have a price value which denotes how much the product cost
+- At the end of each day our system lowers both values for every product
+- Once the sell by date has passed, price degrades twice as fast
+- The price of a product is never negative
+- The price of a product is never more than 50
+
+Detected products and conditions about each product:
+
+- Low Coverage 
+- Medium Coverage
+- Full Coverage:
+    . actually increases in price the older it gets
+- Mega Coverage
+    . being a legendary product, never has to be sold or decreases in price
+    . is a legendary product and as such its price is 80 and it never alters
+- Special Full Coverage
+    . like full coverage, increases in price as its sellIn value approaches:
+        . price increases by 2 when there are 10 days or less and by 3 when there are 5 days or less but
+        . price drops to 0 when no more days left (and the product is not valid anymore)
+
+- Super Sale (new product)
+    . Products degrade in price twice as fast as normal Products
+
+Properties (and additional Features)
+- name
+- price
+- sellIn
+
+
+- priceIncreasePerDay (number)
+- allowToModifyPrice (boolean)
+
+Default properties:
+- defaultPriceIncreasePerDay = -1
+
