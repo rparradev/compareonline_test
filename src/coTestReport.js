@@ -36,7 +36,7 @@ const productsAtDayZero = [
   };
   
   for (let i = 1; i <= 30; i += 1) {
-    console.log(`Day ${i}`);
+    console.log(`---Day ${i}---`);
     console.log('name, sellIn, price');
     carInsurance.updatePrice().forEach(productPrinter);
     console.log('');
